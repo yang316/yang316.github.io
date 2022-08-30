@@ -1,4 +1,4 @@
-/* @keyframes gradientBG {
+@keyframes gradientBG {
     0% {
         background-position: 0% 50%;
     }
@@ -10,68 +10,18 @@
     }
 }
 #web_bg {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background:  url("https://w.wallhaven.cc/full/e7/wallhaven-e7kpl8.png") linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
-} */
-/* 首页文章卡片 */
-#recent-posts > .recent-post-item{
-    background:rgba(255, 255, 255, 0.9);
-}
-/* 首页侧栏卡片 */
-.card-widget{
-  background:rgba(255, 255, 255, 0.9)!important;
-}
-/* 文章页面正文背景 */
-div#post{
-  background: rgba(255, 255, 255, 0.9);
-}
-/* 分页页面 */
-div#page{
-  background: rgba(255, 255, 255, 0.9);
-}
-/* 归档页面 */
-div#archive{
-  background: rgba(255, 255, 255, 0.9);
-}
-/* 标签页面 */
-div#tag{
-  background: rgba(255, 255, 255, 0.9);
-}
-/* 分类页面 */
-div#category{
-  background: rgba(255, 255, 255, 0.9);
+} 
+/* 文章页背景 */
+.layout_post>#post {
+    /* 以下代表透明度为0.5 可以自行修改*/
+    background: rgba(255,255,255,.1);
 }
 
-/* #footer{
-    opacity: 0.5;
-} */
-/* 页脚透明 */
-#footer{
-    background: transparent!important;
-  }
-  /* 页脚黑色透明玻璃效果移除 */
-#footer::before{
-    background: transparent!important;
+/* 所有页面背景 */
+#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+    /* 以下代表透明度为0.5 */
+    background: rgba(255,255,255,.1);
 }
-/* 头图透明 */
-/* #page-header{
-background: transparent!important;
-} */
-/* 头图遮罩层透明 */
-#page-header::before{
-background: transparent!important;
-}
-/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
-#page-header.post-bg:before {
-background-color: transparent!important;
-}
-/*夜间模式伪类遮罩层透明*/
-[data-theme="dark"]
-#footer::before{
-    background: transparent!important;
-    }
-[data-theme="dark"]
-#page-header::before{
-    background: transparent!important;
-    }
