@@ -11,8 +11,8 @@
 }
 #web_bg {
     background:  url("https://w.wallhaven.cc/full/e7/wallhaven-e7kpl8.png") linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+    /* background-size: 400% 400%; */
+    /* animation: gradientBG 15s ease infinite; */
 } 
 /* 文章页背景 */
 .layout_post>#post {
